@@ -1,9 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+                height: 100%;
+            }
+            .box {
+                text-align: center;
+            }
+            .sbox {
+                border-radius: 50px;
+                text-align: center;
+            }
+            header, footer {
+                display: flex;
+                flex-direction: row;
+            }
+            header .topLinks {
+                display: flex;
+                margin: 0 0 0 auto;
+            }
+            header .topLinks button {
+                background: transparent;
+                border: none;
+                padding: 10px 10px 10px 10px ;
+            }
+            footer .btmLinksRight {
+                margin-left: auto;
+            }
+            footer .btmLinksRight button {
+                background: transparent;
+                border: none;
+            }
+            footer .btmLinksLeft {
+                margin-left: auto 0 0 0;
+            }
+            footer .btmLinksLeft button {
+                background: transparent;
+                border: none;
+            }
+        </style>
         <title>Google</title>
     </head>
     <body>
-        <h1>Google</h1>
+        <header>
+            <div class="topLinks">
+                <button class="gmail-btn">Gmail</button>
+                <button class="img-btn">Images</button>
+            </div>
+        </header>
+        <div class="box">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="sbox">
+            <input type="search" size="80">
+        </div>
+        <footer>
+            <div class="btmLinksLeft">
+                <button class="about-btn">About</button>
+                <button class="ads-btn">Advertising</button>
+                <button class="busi-btn">Business</button>
+            </div>
+            <div class="btmLinksRight">
+                <button class="terms-btn">Terms</button>
+                <button class="priv-btn">Privacy</button>
+                <button class="settings-btn">Settings</button>
+            </div>
+        </footer>
     </body>
 </html>
